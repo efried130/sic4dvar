@@ -19,4 +19,4 @@ COPY sic4dvar.py /app/src/
 
 VOLUME ["/app/input", "/app/output", "/app/logs"]
 
-ENTRYPOINT ["python3", "/app/src/sic4dvar.py"]
+ENTRYPOINT ["/app/env/bin/python3", "/app/src/sic4dvar.py"]
